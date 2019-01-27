@@ -1,0 +1,65 @@
+body {
+  background-color: lightblue;
+
+  height: 200px;
+  background-image: linear-gradient(to right, #ffddcc,#ff884d)/* Standard syntax (must be last) */
+
+}
+
+
+.img1{
+
+  border-radius: 50%;
+  position: fixed;
+  top:100px;
+  left:80px;
+
+}
+
+.img2{
+
+  border-radius: 50%;
+  position: fixed;
+  top:80px;
+  left:800px;
+
+}
+.img3{
+
+  border-radius: 50%;
+  position: fixed;
+  bottom:100px;
+ left:80px;
+
+}
+.img4{
+
+  border-radius: 50%;
+  position: fixed;
+  top:100px;
+  left:500px;
+
+}
+.img5{
+
+  border-radius: 50%;
+  position:fixed;
+  top:100px;
+ right:80px;
+
+}
+.img6{
+
+  border-radius: 50%;
+  position: fixed;
+  bottom:80px;
+  right:150px;
+
+}
+
+
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
