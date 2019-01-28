@@ -5,13 +5,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>springspree</title>
 	<link rel="stylesheet"  href="first.css">
-	
+	<script type="text/javascript"  >
+    var picPaths = ['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg', 'images/6.jpg', 'images/7.jpg', 'images/8.jpg', 'images/9.jpg', 'images/10.jpg', 'images/11.jpg', 'images/12.jpg'];
+         
+            var curPic1 = -1,curPic2 = 0,curPic3 =1 ,curPic4 = 2,curPic5 = 3,curPic6 = 4;
+            
+            var imgO = new Array();
+            for(i=0; i < picPaths.length; i++) {
+                imgO[i] = new Image();
+                imgO[i].src = picPaths[i];
+            }
+
+            function swapImage() {
+                curPic1 = (++curPic1 > picPaths.length-1)? 0 : curPic1;
+                imgCont1.src = imgO[curPic1].src;
+
+                 curPic2 = (++curPic2 > picPaths.length-1)? 0 : curPic2;
+                imgCont2.src = imgO[curPic2].src;
+
+                 curPic3 = (++curPic3 > picPaths.length-1)? 0 : curPic3;
+                imgCont3.src = imgO[curPic3].src;
+
+                 curPic4 = (++curPic4 > picPaths.length-1)? 0 : curPic4;
+                imgCont4.src = imgO[curPic4].src;
+
+                 curPic5 = (++curPic5 > picPaths.length-1)? 0 : curPic5;
+                imgCont5.src = imgO[curPic5].src;
+
+                 curPic6 = (++curPic6 > picPaths.length-1)? 0 : curPic6;
+                imgCont6.src = imgO[curPic6].src;
+
+
+
+                setTimeout(swapImage,2000);
+            }
+
+            window.onload=function() {
+                imgCont1 = document.getElementById('img1');
+
+
+                imgCont2 = document.getElementById('img2');
+
+                imgCont3 = document.getElementById('img3');
+
+                imgCont4 = document.getElementById('img4');
+
+                imgCont5 = document.getElementById('img5');
+
+                imgCont6= document.getElementById('img6');
+
+
+
+                swapImage();
+            }
+        
+
+</script>
 </head>
-<body onload="changeimg()">
+<body  >
 <h1> Main Page</h1>
 
 <div class="row">
-<div id="div_id">
+<div  id="div_id">
  <div class="col-lg-3 col-md-6"><img id="img1" src="images/1.jpg" alt="image1" style="width:200px;height:200px;"></div>
 
  <div class="col-lg-3 col-md-6"><img id="img2" src="images/2.jpg" alt="image1" style="width:200px;height:200px;"></div>
